@@ -1,0 +1,57 @@
+
+Framework
+- https://laravel.com/docs/9.x
+
+- https://vuejs.org/
+- https://tailwindcss.com
+- https://tailwind-elements.com/
+
+Tools:
+- https://inertiajs.com/
+- https://freefrontend.com/tailwind-code-examples/
+- https://freefrontend.com/vue-code-examples/
+- https://fonts.google.com/
+- https://icons.getbootstrap.com/
+
+Cara Run Project
+Terminal 1:
+    npm run dev
+
+Terminal 2:
+    php artisan serve
+
+
+---------------------------------------------------------------------------
+Jika pakai SPA pindah laman bisa pakai tag <Link></Link> dari Inertia
+
+<template>
+    <Link href="/about">to About</Link>
+</template>
+
+<script>
+    import { Head, Link } from "@inertiajs/vue3";
+</script>
+
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Setiap komponen dari "Tailwind Elements" yang memiliki interaksi seperti
+- Modal
+- Dropdown
+- Carousel
+- Collapse
+- dll
+selalu atur lifecycle Elementnya.
+
+
+<script setup>
+    import { onMounted } from "vue";
+    import { Collapse, initTE } from "tw-elements";
+
+    onMounted(() => {
+        initTE({ Collapse });
+    });
+</script>
+
+---------------------------------------------------------------------------
+

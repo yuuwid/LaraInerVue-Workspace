@@ -1,3 +1,5 @@
+# Laravel + InertiaJS + VueJS Worksspace
+
 
 ## Framework
 - https://laravel.com/docs/9.x

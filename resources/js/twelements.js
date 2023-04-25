@@ -1,4 +1,6 @@
-import { Collapse, Dropdown, initTE } from "tw-elements";
+import { initTE } from "tw-elements";
+
+import { Collapse, Dropdown } from "tw-elements";
 
 function mountEl() {
     initTE({

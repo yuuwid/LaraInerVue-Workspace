@@ -1,19 +1,20 @@
 # Laravel + InertiaJS + VueJS Worksspace
 
-
 ## Framework
-- https://laravel.com/docs/9.x
 
-- https://vuejs.org/
-- https://tailwindcss.com
-- https://tailwind-elements.com/
+-   https://laravel.com/docs/9.x
+
+-   https://vuejs.org/
+-   https://tailwindcss.com
+-   https://tailwind-elements.com/
 
 ## Tools:
-- https://inertiajs.com/
-- https://freefrontend.com/tailwind-code-examples/
-- https://freefrontend.com/vue-code-examples/
-- https://fonts.google.com/
-- https://icons.getbootstrap.com/
+
+-   https://inertiajs.com/
+-   https://freefrontend.com/tailwind-code-examples/
+-   https://freefrontend.com/vue-code-examples/
+-   https://fonts.google.com/
+-   https://icons.getbootstrap.com/
 
 ## Clone and Install
 
@@ -48,7 +49,7 @@ Jika pakai SPA pindah laman bisa pakai tag `<Link>` dari Inertia
 </template>
 
 <script>
-    import { Head, Link } from "@inertiajs/vue3";
+import { Head, Link } from "@inertiajs/vue3";
 </script>
 ```
 
@@ -63,15 +64,16 @@ Setiap komponen dari "Tailwind Elements" yang memiliki interaksi seperti
 -   Carousel
 -   Collapse
 -   dll
-    selalu atur lifecycle Elementnya.
 
-```vue
-<script setup>
-    import { onMounted } from "vue";
-    import { Collapse, initTE } from "tw-elements";
+atur lifecycle Elementnya pada file `resources/js/twelemets.js`
 
-    onMounted(() => {
-        initTE({ Collapse });
+```js
+import { Collapse, Dropdown } from "tw-elements";
+
+function mountEl() {
+    initTE({
+        Collapse,
+        Dropdown,
     });
-</script>
+}
 ```

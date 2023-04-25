@@ -21,7 +21,9 @@ createInertiaApp({
         const app = createApp({
             render: () => h(App, props),
             // Fix Bug in SPA (Single Page Application)
-            mounted: () => mountEl(),
+            mounted: () => {
+                mountEl();
+            },
         });
 
         app.use(plugin).use(ZiggyVue, Ziggy);

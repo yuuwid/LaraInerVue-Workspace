@@ -1,15 +1,22 @@
 <template>
     <Head title="Example"></Head>
-
 </template>
 
-<script setup>
-import { onMounted } from "vue";
+<script>
 import { Head, Link } from "@inertiajs/vue3";
 
-onMounted(() => {});
-
-defineProps({});
+export default {
+    props: {},
+    computed: {},
+    components: {
+        Head,
+        Link,
+    },
+    data() {
+        return {};
+    },
+    mounted: () => {},
+};
 </script>
 
 <style>

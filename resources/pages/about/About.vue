@@ -1,17 +1,26 @@
 <template>
     <Head title="About"></Head>
-    <h1>About</h1>
+
+    <h1 class="text-2xl">ABOUT</h1>
 
     <Link href="/">to Home</Link>
 </template>
 
-<script setup>
-import { onMounted } from "vue";
+<script>
 import { Head, Link } from "@inertiajs/vue3";
 
-onMounted(() => {});
-
-defineProps({});
+export default {
+    props: {},
+    computed: {},
+    components: {
+        Head,
+        Link,
+    },
+    data() {
+        return {};
+    },
+    mounted: () => {},
+};
 </script>
 
 <style>

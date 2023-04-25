@@ -1,6 +1,7 @@
 <template>
     <Head title="Home"></Head>
 
+
     <h1 class="text-2xl">HOME</h1>
 
     <Link href="/about">to About</Link>

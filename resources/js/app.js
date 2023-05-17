@@ -6,7 +6,7 @@ import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/vue3";
 import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import { ZiggyVue } from "../../vendor/tightenco/ziggy/dist/vue.m";
-import mountEl from "./twelements";
+import { initFlowbite } from "flowbite";
 
 const appName = window.document.getElementsByTagName("title")[0]?.innerText;
 
@@ -22,7 +22,7 @@ createInertiaApp({
             render: () => h(App, props),
             // Fix Bug in SPA (Single Page Application)
             mounted: () => {
-                mountEl();
+                initFlowbite();
             },
         });
 

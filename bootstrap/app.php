@@ -52,4 +52,6 @@ $app->singleton(
 |
 */
 
+require_once 'render.php';
+
 return $app;
